@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const productRoutes = require('./routes/products');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT ||3000;
 
 // Middleware to parse JSON bodies
 app.use(express.json());
